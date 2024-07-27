@@ -4,3 +4,8 @@ export interface INote {
   content: string;
   createdAt: number;
 }
+
+export interface IResponseData {
+  message: string;
+  data: INote[];
+}
