@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  background-color: #50727b;
+  font-family: "Montserrat";
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.containerBtn {
+  margin-top: 55px;
+  position: static;
+}
+.note {
+  position: relative;
+  /* z-index: -1; */
+  background: #eeeeee;
+  width: 250px;
+  height: 220px;
+  margin: 20px;
+  border-radius: 15px;
+  padding: 5px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.75);
+}
+
+.note h3 {
+  padding: 10px;
+  font-weight: bold;
+  font-size: larger;
+  text-align: center;
+}
+
+.note p {
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  line-height: 1.5;
+  opacity: 0.7;
+  /* z-index: -1; */
+}
+
+#deleteBtn {
+  position: static;
+  display: flex;
+  margin: auto;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+  background-color: #6eacda;
+  border-radius: 10px;
+  align-items: center;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+#deleteBtn span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#deleteBtn span::after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#deleteBtn:hover span {
+  padding-right: 25px;
+}
+
+#deleteBtn:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+#list-container {
+  margin: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: center;
+}
+
+form {
+  margin: 20px 30%;
+}
+/* Style inputs */
+/* #submitBtn, */
+#title,
+#content {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.buttons {
+  display: flex;
+}
+/* Style the submit button */
+#submitBtn,
+#closeBtn {
+  width: 100%;
+  background-color: #03346e;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Add a background color to the submit button on mouse-over */
+#submitBtn:hover {
+  background-color: #6eacda;
+}

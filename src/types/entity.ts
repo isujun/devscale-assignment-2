@@ -5,7 +5,6 @@ export interface INote {
   createdAt: number;
 }
 
-export interface IResponseData {
-  message: string;
+export interface INoteResult {
   data: INote[];
 }

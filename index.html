@@ -2,17 +2,21 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Note Taking App</title>
+    <link rel="stylesheet" href="./src/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   </head>
   <body>
-    <h1 id="heading">Hello !</h1>
-    <div>
-      <input id="title" />
-      <textarea id="content"></textarea>
-      <button id="submitBtn">Create Note</button>
-    </div>
-    <script type="module" src="/src/main.ts"></script>
+    <form>
+      <input id="title" placeholder="Add Title.." />
+
+      <textarea id="content" placeholder="Add Description.."></textarea>
+      <div class="container-btn">
+        <button class="button" id="submitBtn">Create</button>
+      </div>
+    </form>
+    <div id="list-container"></div>
+    <script type="module" src="./src/main.ts"></script>
   </body>
 </html>
